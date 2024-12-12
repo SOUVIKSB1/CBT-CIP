@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive BlogSphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Account Creation -->
+    <div id="account-modal" class="modal">
+        <div class="modal-content">
+            <h2>Create Account</h2>
+            <input type="text" id="username" placeholder="Enter your username">
+            <button id="createAccountBtn">Create Account</button>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <img src="image.avif" alt="Logo" class="logo">
+        <h1>BlogSphere</h1>
+        <p>Express. Connect. Engage.</p>
+        <button id="logoutBtn" class="hidden">Logout</button>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Create Post -->
+        <section class="create-post">
+            <h2>Create Your Post</h2>
+            <textarea id="postContent" placeholder="Write your thoughts here..." rows="4"></textarea>
+            <button id="postBtn">Post</button>
+        </section>
+
+        <!-- Posts -->
+        <section class="recent-posts">
+            <h2>Recent Posts</h2>
+            <div id="postsContainer">
+                <!-- Dynamic Posts Appear Here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 BlogSphere | Made for creators | Souvik </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
